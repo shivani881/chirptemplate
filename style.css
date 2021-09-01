@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* global variables */
+:root {
+  --max-width: 80%;
+  --margin: auto;
+}
+body {
+  /* max-width: 80vw; */
+  margin: auto;
+}
+
+.container {
+  background-color: #fceded;
+}
+/* header css */
+.navbar {
+  max-width: var(--max-width);
+  margin: var(--margin);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 15px;
+}
+.left {
+  color: rgb(5, 182, 252);
+  margin: 25px;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+}
+.left .hamburger {
+  display: none;
+}
+
+.right {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 12px 0;
+}
+.right ul {
+  display: flex;
+  margin: 25px;
+}
+.right ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+.btn-nav {
+  background-color: rgb(5, 182, 252);
+  color: white;
+  padding: 15px 22px;
+  border-radius: 8px;
+  border: 2px solid rgb(5, 182, 252);
+  display: inline-flex;
+  margin: 12px;
+}
+.btn-nav h3 {
+  margin: 0 8px;
+}
+/* Hero section css */
+.content {
+  max-width: var(--max-width);
+  margin: var(--margin);
+  display: flex;
+}
+.left-content {
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.left-content h1 {
+  font-size: 3.2rem;
+}
+.left-content p {
+  color: gray;
+  line-height: 1.6;
+  margin: 9px;
+}
+.btn-content {
+  background-color: rgb(5, 182, 252);
+  color: white;
+  padding: 15px 22px;
+  border-radius: 8px;
+  border: 2px solid rgb(5, 182, 252);
+  display: inline-flex;
+  margin: 12px;
+}
+.btn-content h3 {
+  margin: 0 8px;
+}
+.left-content a {
+  text-decoration: none;
+  color: rgb(5, 182, 252);
+}
+.avtar img {
+  margin-left: -24px;
+  position: relative;
+  left: 30px;
+}
+
+.strong {
+  color: rgb(5, 182, 252);
+}
+.right-content {
+  width: 100%;
+  text-align: right;
+  margin: 20px 0;
+}
+.right-content img {
+  width: 90%;
+}
+.right-content .tablet {
+  display: none;
+}
+
+/* about sections css */
+.about {
+  max-width: var(--max-width);
+  margin: 40px auto;
+  font-family: "Roboto", sans-serif;
+}
+.about h1 {
+  font-size: 3rem;
+  margin: 0 7px;
+}
+.allFeatures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.features {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  margin: 14px;
+  border: 1.6px solid gray;
+  border-radius: 7px;
+  padding: 20px;
+  line-height: 1.8rem;
+}
+.features span {
+  font-size: 2rem;
+}
+.features p {
+  color: gray;
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+/* reviews section css */
+.reviews {
+  background-color: rgb(201, 233, 246);
+  font-family: "Roboto", sans-serif;
+}
+.reviewswidth {
+  max-width: var(--max-width);
+  margin: var(--margin);
+  padding: 40px 0;
+}
+.reviewswidth h2 {
+  font-size: 2rem;
+}
+
+.allreviews {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.review {
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+}
+.tweet {
+  display: flex;
+}
+.tweet-name {
+  margin: 12px 12px 0 5px;
+}
+.tweet-name p {
+  color: gray;
+}
+.bird {
+  margin-left: 5rem;
+}
+.comment {
+  padding: 1rem;
+  line-height: 1.5;
+  color: gray;
+}
+.like {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+/* price section */
+.price {
+  max-width: var(--max-width);
+  /* margin: var(--margin); */
+  margin: 50px auto;
+  font-family: "Roboto", sans-serif;
+}
+.headings {
+  text-align: center;
+  line-height: 1.5;
+}
+.monthlyplan {
+  border: 2px solid #eda9a9;
+  border-radius: 15px;
+  width: 50%;
+  margin: 40px auto;
+  background-color: #f7f0e7;
+  padding: 1.5rem;
+}
+.headings p {
+  color: gray;
+}
+.headings h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.dollar {
+  display: flex;
+  font-size: 2.2rem;
+}
+.preheading p {
+  font-size: 1.5rem;
+  margin-top: 23px;
+  color: gray;
+}
+.priceblock {
+  margin: 20px 0;
+}
+.price-content {
+  display: flex;
+  line-height: 2.3rem;
+  color: gray;
+  font-size: 1.2rem;
+  /* flex-direction: column; */
+}
+.btn-price {
+  background-color: rgb(5, 182, 252);
+  color: white;
+  padding: 16px 117px;
+  border-radius: 8px;
+  border: 2px solid rgb(5, 182, 252);
+  display: inline-flex;
+  margin: 12px;
+  text-align: center;
+}
+/* footer section */
+footer {
+  background-color: rgb(201, 233, 246);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-family: "Roboto";
+}
+footer h1 {
+  color: #3080f5;
+  font-size: 20px;
+  font-style: italic;
+}
+.right-footer {
+  display: flex;
+  margin: 1rem 0;
+}
+.right-footer img {
+  margin: 0 12px;
+}
+.right-footer p {
+  margin: 0 12px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .right {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 27px 0;
+  }
+  .left {
+    color: rgb(5, 182, 252);
+    margin: 42px;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bolder;
+  }
+  .btn-nav {
+    background-color: rgb(5, 182, 252);
+    color: white;
+    padding: 15px 22px;
+    border-radius: 8px;
+    border: 2px solid rgb(5, 182, 252);
+    display: inline-flex;
+    margin: 12px;
+  }
+  .review {
+    background-color: white;
+    margin: 4px;
+    padding: 12px;
+  }
+}
+
+@media only screen and (max-width: 934px) {
+  .content {
+    max-width: var(--max-width);
+    margin: var(--margin);
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-nav h3 {
+    margin: 0 -1px;
+  }
+  .right-content img {
+    display: none;
+  }
+  .right-content .tablet {
+    display: block;
+    width:100%;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .left{
+    display: flex;
+  }
+.left .hamburger{
+  display: block;
+  margin: 0 0 0 100px;
+}
+.right{
+  display: none;
+}
+.allFeatures{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.allreviews{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+monthlyplan {
+  border: 2px solid #eda9a9;
+  border-radius: 15px;
+  margin: 40px auto;
+  background-color: #f7f0e7;
+  padding: 1.5rem;
+}
+.price{
+  max-width: 100%;
+}
+}
+
+
+.review {
+
+    background-color: white;
+    margin: 4px;
+    padding: 5px;
+
+}
+.btn-price {
+  background-color: rgb(5, 182, 252);
+  color: white;
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 2px solid rgb(5, 182, 252);
+  display: inline-flex;
+  margin: 10px;
+  text-align: center;
+}
+.btn-price h3{
+  font-size: 9px;
+}
+
+.right-footer p {
+  margin: 0 6px;
+  font-size: 10px;
+}
+.avtar img {
+
+    margin-left: -26px;
+    position: relative;
+    left: 30px;
+}
